@@ -21,6 +21,7 @@
 
 	chosen {
 		zephyr,console = &uart1;
+		zephyr,display = &display;
 		zephyr,shell-uart = &uart1;
 		zephyr,sram = &sram0;
 	};
@@ -42,4 +43,10 @@
 &uart1 {
 	status = "okay";
 	current-speed = <115200>;
+};
+
+&display{
+	width = <768>;
+	height = <512>;
+	status = "okay";
 };

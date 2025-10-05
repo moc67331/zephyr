@@ -1,0 +1,9 @@
+# Smartbond display controller configuration options
+# SPDX-License-Identifier: Apache-2.0
+
+
+config BCM2711
+	bool "BCM2711 display driver"
+	default y
+	help
+	  Enable BCM2711(for raspberry pi without pico) display controller.
